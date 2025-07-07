@@ -63,16 +63,19 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full flex justify-end px-4 sm:px-6 lg:px-8">
-      <div className="relative z-0 w-full max-w-[600px]">
-        <div className="mb-8">
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
-          <p className={styles.sectionSubText}>Get in touch</p>
-        </div>
+    <div className="flex flex-col items-center">
+      <div className="w-full text-center mb-8">
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={`${styles.sectionSubText}`}>
+          Want to collaborate or want to say hi? Reach out — I'd love to hear from
+          you. ❤️
+        </p>
+      </div>
 
+      <div className="w-full flex justify-start pl-8 sm:pl-12 md:pl-16">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="bg-[#0D1111] rounded-2xl p-8 backdrop-blur-lg"
+          className="bg-[#0D1111] rounded-2xl p-8 backdrop-blur-lg w-full max-w-[600px]"
         >
           <form
             ref={formRef}
@@ -133,7 +136,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-[#915EFF] hover:bg-[#7549d4] py-4 px-8 rounded-xl outline-none w-full text-white font-bold shadow-md shadow-primary transition-all duration-300 text-[16px]"
+              className="bg-[#915EFF] hover:bg-[#7549d4] py-4 px-8 rounded-[30px] outline-none w-full text-white font-bold shadow-md shadow-primary transition-all duration-300 text-[16px]"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>

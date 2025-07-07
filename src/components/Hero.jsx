@@ -35,7 +35,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/bikrammondal5"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-3 px-8 rounded-xl outline-none w-fit text-white shadow-md shadow-primary 
+              className="py-3 px-8 rounded-[30px] outline-none w-fit text-white shadow-md shadow-primary 
               bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 
               transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
             >
@@ -48,7 +48,7 @@ const Hero = () => {
               href="https://github.com/BikramMondal5"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-3 px-8 rounded-xl outline-none w-fit text-white shadow-md shadow-primary 
+              className="py-3 px-8 rounded-[30px] outline-none w-fit text-white shadow-md shadow-primary 
               bg-gradient-to-r from-gray-800 to-gray-600 hover:from-gray-900 hover:to-gray-700 
               transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
             >
