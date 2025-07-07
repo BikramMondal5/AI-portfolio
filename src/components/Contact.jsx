@@ -67,8 +67,8 @@ const Contact = () => {
       <div className="w-full text-center mb-8">
         <h3 className={styles.sectionHeadText}>Contact.</h3>
         <p className={`${styles.sectionSubText}`}>
-          Want to collaborate or want to say hi? Reach out — I'd love to hear from
-          you. ❤️
+          Want to collaborate or want to say hi? 
+          Reach out — I'd love to hear from you. ❤️
         </p>
       </div>
 
@@ -90,7 +90,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border-none font-medium placeholder-gray-400"
+                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border-none font-medium placeholder-gray-400"
+                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                 value={form.subject}
                 onChange={handleChange}
                 placeholder="What's the subject?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border-none font-medium placeholder-gray-400"
+                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border-none font-medium resize-none placeholder-gray-400"
+                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium resize-none placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
