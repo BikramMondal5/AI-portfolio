@@ -29,7 +29,7 @@ const Hero = () => {
             variants={fadeIn("up", "spring", 0.5, 1)}
             initial="hidden"
             animate="show"
-            className="mt-16 flex gap-4"
+            className="mt-8 flex gap-4"
           >
             <a
               href="https://www.linkedin.com/in/bikrammondal5"
