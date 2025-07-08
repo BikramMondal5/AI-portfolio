@@ -1,14 +1,29 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, useAnimations } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
+  const group = useRef();
+  const drone = useGLTF("./buster_drone/scene.gltf");
+  const { actions, names } = useAnimations(drone.animations, drone.scene);
+
+  useEffect(() => {
+    // Play all animations if they exist
+    names.forEach((name) => {
+      actions[name].reset().play();
+    });
+  }, [actions, names]);
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <primitive
+      ref={group}
+      object={drone.scene}
+      scale={1.2}
+      position-y={0}
+      rotation={[0, Math.PI / 2, 0]}
+    />
   );
 };
 
@@ -17,7 +32,6 @@ const EarthCanvas = () => {
     <Canvas
       shadows
       frameloop='demand'
-      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
@@ -29,12 +43,22 @@ const EarthCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
+          autoRotateSpeed={2}
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI}
+          minPolarAngle={0}
         />
+        <hemisphereLight intensity={0.15} groundColor='black' />
+        <spotLight
+          position={[-20, 50, 10]}
+          angle={0.12}
+          penumbra={1}
+          intensity={1}
+          castShadow
+          shadow-mapSize={1024}
+        />
+        <pointLight intensity={1} />
         <Earth />
-
         <Preload all />
       </Suspense>
     </Canvas>
