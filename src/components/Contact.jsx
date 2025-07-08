@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -35,7 +37,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Bikram",
           from_email: form.email,
-          to_email: "your-email@example.com",
+          to_email: "codesnippets45@gmail.com",
           subject: form.subject,
           message: form.message,
         },
@@ -159,25 +161,28 @@ const Contact = () => {
           </p>
           <div className="flex gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/BikramMondal5"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300"
+              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300 flex items-center gap-2"
             >
+              <FaGithub className="text-xl" />
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/bikram-mondal-a2bb18343"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300"
+              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300 flex items-center gap-2"
             >
+              <FaLinkedinIn className="text-xl" />
               LinkedIn
             </a>
             <a
-              href="mailto:your-email@example.com"
-              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300"
+              href="mailto:codesnippets45@gmail.com"
+              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300 flex items-center gap-2"
             >
+              <MdEmail className="text-xl" />
               Email
             </a>
           </div>

@@ -6,7 +6,7 @@ import { github } from "../assets";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-[90vh] mx-auto`}>
+    <section className={`relative w-full h-[85vh] mx-auto`}>
       <div
         className={`absolute inset-0 top-[170px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
