@@ -77,12 +77,12 @@ const Contact = () => {
       <div className="w-full flex flex-col-reverse gap-8 overflow-hidden lg:flex-row mt-10">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] bg-[#0D1111] p-6 rounded-2xl"
+          className="flex-1 bg-[#0D1111] p-8 rounded-2xl lg:max-w-[600px]"
         >
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-5 w-full"
           >
             <div className="flex flex-col gap-1">
               <label className="text-white font-medium">Full Name</label>
@@ -147,7 +147,7 @@ const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="flex-[0.75] h-[350px] lg:h-auto"
+          className="flex-1 h-[350px] lg:h-auto"
         >
           <EarthCanvas />
         </motion.div>
