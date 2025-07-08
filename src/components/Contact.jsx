@@ -72,10 +72,10 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="w-full flex justify-start pl-4 sm:pl-8 md:pl-12">
+      <div className="w-full flex flex-col-reverse gap-10 overflow-hidden lg:flex-row">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="bg-[#0D1111] rounded-2xl p-8 backdrop-blur-lg w-full max-w-[600px]"
+          className="flex-[0.75] bg-[#0D1111] p-8 rounded-2xl"
         >
           <form
             ref={formRef}
@@ -141,6 +141,13 @@ const Contact = () => {
               {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
+        </motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="flex-[0.75] h-[350px] lg:h-auto"
+        >
+          <EarthCanvas />
         </motion.div>
       </div>
     </div>
