@@ -58,7 +58,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
               active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-[#915EFF] transition-colors duration-300 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                 active === nav.title ? "text-white" : "text-secondary"
-                }`}
+                } hover:text-[#915EFF] transition-colors duration-300`}
                 onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
