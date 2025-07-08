@@ -63,16 +63,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-full text-center mb-8">
+    <div className="flex flex-col items-center mt-0">
+      <div className="w-full text-center mb-4">
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <p className={`${styles.sectionSubText}`}>
+        <p className={`${styles.sectionSubText} mt-2`}>
           Want to collaborate or want to say hi? 
           Reach out — I'd love to hear from you. ❤️
         </p>
       </div>
 
-      <div className="w-full flex justify-start pl-8 sm:pl-12 md:pl-16">
+      <div className="w-full flex justify-start pl-4 sm:pl-8 md:pl-12">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="bg-[#0D1111] rounded-2xl p-8 backdrop-blur-lg w-full max-w-[600px]"

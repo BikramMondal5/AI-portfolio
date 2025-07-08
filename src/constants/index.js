@@ -260,6 +260,70 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "AI Chat Platform",
+    description:
+      "An intelligent chatbot platform powered by machine learning that provides real-time customer support, multilingual communication, and analytics dashboard for businesses.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tensorflow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit, // reusing existing image as placeholder
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "E-Learning Platform",
+    description:
+      "A feature-rich online learning platform with video courses, interactive quizzes, progress tracking, and certificate generation for completed courses.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent, // reusing existing image as placeholder
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Health Tracker",
+    description:
+      "A comprehensive health and fitness tracking application that monitors daily activities, nutrition intake, workout routines, and provides personalized recommendations.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "graphql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide, // reusing existing image as placeholder
+    source_code_link: "https://github.com/",
+  },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
