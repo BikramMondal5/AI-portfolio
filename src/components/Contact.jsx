@@ -64,25 +64,25 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col items-center mt-0">
-      <div className="w-full text-center mb-4">
+      <div className="w-full text-center mb-3">
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <p className={`${styles.sectionSubText} mt-2`}>
+        <p className={`${styles.sectionSubText} mt-1`}>
           Want to collaborate or want to say hi? 
           Reach out — I'd love to hear from you. ❤️
         </p>
       </div>
 
-      <div className="w-full flex flex-col-reverse gap-10 overflow-hidden lg:flex-row">
+      <div className="w-full flex flex-col-reverse gap-8 overflow-hidden lg:flex-row mt-10">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] bg-[#0D1111] p-8 rounded-2xl"
+          className="flex-[0.75] bg-[#0D1111] p-6 rounded-2xl"
         >
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-6"
+            className="flex flex-col gap-4"
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <label className="text-white font-medium">Full Name</label>
               <input
                 type="text"
@@ -90,12 +90,12 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
+                className="bg-[#212529] py-3 px-5 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <label className="text-white font-medium">Email Address</label>
               <input
                 type="email"
@@ -103,12 +103,12 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
+                className="bg-[#212529] py-3 px-5 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <label className="text-white font-medium">Subject</label>
               <input
                 type="text"
@@ -116,27 +116,27 @@ const Contact = () => {
                 value={form.subject}
                 onChange={handleChange}
                 placeholder="What's the subject?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
+                className="bg-[#212529] py-3 px-5 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <label className="text-white font-medium">Message</label>
               <textarea
-                rows={6}
+                rows={5}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="bg-[#212529] py-4 px-6 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium resize-none placeholder-gray-400 transition-colors duration-300"
+                className="bg-[#212529] py-3 px-5 text-white rounded-lg outline-none border border-transparent focus:border-[#915EFF] font-medium resize-none placeholder-gray-400 transition-colors duration-300"
                 required
               />
             </div>
 
             <button
               type="submit"
-              className="bg-[#915EFF] hover:bg-[#7549d4] py-4 px-8 rounded-[30px] outline-none w-full text-white font-bold shadow-md shadow-primary transition-all duration-300 text-[16px]"
+              className="bg-[#915EFF] hover:bg-[#7549d4] py-3 px-8 rounded-[30px] outline-none w-full text-white font-bold shadow-md shadow-primary transition-all duration-300 text-[16px] mt-2"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
@@ -149,6 +149,39 @@ const Contact = () => {
         >
           <EarthCanvas />
         </motion.div>
+      </div>
+
+      {/* Footer */}
+      <div className="w-full mt-16 border-t border-[#915EFF]/10">
+        <div className="flex flex-col md:flex-row justify-between items-center py-8 px-4">
+          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+            © {new Date().getFullYear()} Bikram. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:your-email@example.com"
+              className="text-gray-400 hover:text-[#915EFF] transition-colors duration-300"
+            >
+              Email
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
