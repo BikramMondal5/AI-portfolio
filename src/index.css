@@ -202,3 +202,24 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+/* Cards styles */
+.c-space {
+  @apply px-6 py-6 sm:px-16 sm:py-16;
+}
+
+.grid-container {
+  @apply flex flex-col gap-5 bg-tertiary p-5 rounded-2xl h-full;
+}
+
+.grid-headtext {
+  @apply font-black text-white text-[24px];
+}
+
+.grid-subtext {
+  @apply mt-2 text-secondary text-[16px] leading-[24px];
+}
+
+.copy-container {
+  @apply flex items-center gap-2 bg-tertiary py-2 px-4 rounded-lg cursor-pointer hover:bg-tertiary/90 transition-colors duration-300;
+}
