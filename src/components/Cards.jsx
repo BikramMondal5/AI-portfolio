@@ -76,13 +76,15 @@ const Cards = () => {
 
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img
-              src={grid3}
-              alt="grid-3"
-              className="w-full sm:h-[266px] h-fit object-cover rounded-t-3xl"
-            />
+            <div className="w-full h-[300px] overflow-hidden rounded-t-3xl">
+              <img
+                src={grid3}
+                alt="grid-3"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-            <div>
+            <div className="pt-6 pb-3">
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
                 I love solving problems and building things through code. Programming isn&apos;t just my
@@ -97,7 +99,7 @@ const Cards = () => {
             <img
               src={grid4}
               alt="grid-4"
-              className="w-full md:h-[170px] sm:h-[276px] h-fit object-cover sm:object-top"
+              className="w-full md:h-[165px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
 
             <div className="space-y-2">
