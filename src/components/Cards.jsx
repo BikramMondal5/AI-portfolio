@@ -76,7 +76,11 @@ const Cards = () => {
 
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img src={grid3} alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+            <img
+              src={grid3}
+              alt="grid-3"
+              className="w-full sm:h-[266px] h-fit object-cover rounded-t-3xl"
+            />
 
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
@@ -93,7 +97,7 @@ const Cards = () => {
             <img
               src={grid4}
               alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+              className="w-full md:h-[170px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
 
             <div className="space-y-2">
