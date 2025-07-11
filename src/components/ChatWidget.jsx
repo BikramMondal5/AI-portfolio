@@ -74,7 +74,7 @@ const ChatWidget = () => {
       {/* Chat toggle button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-5 right-5 w-14 h-14 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-0.5"
+        className="fixed bottom-5 right-5 w-14 h-14 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-0 border-2 border-white/20"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -86,7 +86,7 @@ const ChatWidget = () => {
           <img 
             src="https://avatars.githubusercontent.com/u/170235967?v=4" 
             alt="Chat Bot"
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-13 h-13 rounded-full object-cover"
           />
         )}
       </motion.button>
@@ -94,7 +94,7 @@ const ChatWidget = () => {
       {/* Chat widget */}
       {isOpen && (
         <motion.div
-          className="fixed bottom-24 right-5 w-80 sm:w-96 rounded-2xl overflow-hidden shadow-2xl"
+          className="fixed bottom-24 right-5 w-80 sm:w-96 rounded-2xl overflow-hidden shadow-2xl border2 border-purple-600/30"
           variants={widgetVariants}
           initial="closed"
           animate="open"
