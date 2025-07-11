@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Cards, Contact, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Cards, Contact, Hero, Navbar, Tech, Works, StarsCanvas, ChatWidget } from "./components";
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <ChatWidget />
       </div>
     </BrowserRouter>
   );

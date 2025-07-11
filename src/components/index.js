@@ -7,6 +7,7 @@ import Works from "./Works";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Cards from "./cards";
+import ChatWidget from "./ChatWidget";
 
 
 export {
@@ -18,6 +19,7 @@ export {
   Contact,
   Cards,
   CanvasLoader,
+  ChatWidget,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
