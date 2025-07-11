@@ -1,0 +1,11 @@
+Model Information:
+* title:	LAPTOP 3D MODEL (Asus Tuf Dash F15 2022)
+* source:	https://sketchfab.com/3d-models/laptop-3d-model-asus-tuf-dash-f15-2022-4e80289a455f403fabe181211b10b98e
+* author:	Godspeed (https://sketchfab.com/godspeedx14)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LAPTOP 3D MODEL (Asus Tuf Dash F15 2022)" (https://sketchfab.com/3d-models/laptop-3d-model-asus-tuf-dash-f15-2022-4e80289a455f403fabe181211b10b98e) by Godspeed (https://sketchfab.com/godspeedx14) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

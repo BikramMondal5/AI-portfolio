@@ -209,7 +209,7 @@
 }
 
 .grid-container {
-  @apply flex flex-col gap-5 bg-tertiary p-5 rounded-2xl h-full;
+  @apply flex flex-col gap-5 bg-[#151030] p-5 rounded-2xl h-full;
 }
 
 .grid-headtext {
