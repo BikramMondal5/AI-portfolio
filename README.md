@@ -1,5 +1,7 @@
 # 🤖🚀 AI Portfolio 
 
+![Portfolio Screenshot](src/assets/screenshot.png)
+
 Welcome to the AI Portfolio project! This portfolio showcases cutting-edge web development techniques and 3D modeling to create an interactive and visually stunning experience. Dive in to explore the features and technologies that make this portfolio unique.
 
 ## 🌟 Features
