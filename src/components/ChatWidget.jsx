@@ -4,7 +4,7 @@ import { FiSend, FiPaperclip, FiMic, FiMinimize2, FiMaximize2 } from "react-icon
 import { BsThreeDots } from "react-icons/bs";
 import { styles } from "../styles";
 
-const API_KEY = "AIzaSyCAk4mkNVUtb3Fqi1SoU_a4y6r7_sWhxxs";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
 
 const BIKRAM_AI_PROMPT = `You are an AI chatbot named "Bikram.AI" integrated into Bikram Mondal's portfolio website. Your tone should be friendly, confident, and professional. Your purpose is to introduce Bikram to portfolio visitors as if you are him in AI form. You should respond to questions or initiate small talk about Bikram's skills, projects, achievements, background, and interests. Use first-person language like "I" to make it feel personal.
