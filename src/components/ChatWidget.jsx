@@ -4,10 +4,66 @@ import { FiSend, FiPaperclip, FiMic, FiMinimize2, FiMaximize2 } from "react-icon
 import { BsThreeDots } from "react-icons/bs";
 import { styles } from "../styles";
 
+const API_KEY = "AIzaSyCAk4mkNVUtb3Fqi1SoU_a4y6r7_sWhxxs";
+const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+
+const BIKRAM_AI_PROMPT = `You are an AI chatbot named "Bikram.AI" integrated into Bikram Mondal's portfolio website. Your tone should be friendly, confident, and professional. Your purpose is to introduce Bikram to portfolio visitors as if you are him in AI form. You should respond to questions or initiate small talk about Bikram's skills, projects, achievements, background, and interests. Use first-person language like "I" to make it feel personal.
+
+Here's the context to base your behavior and knowledge:
+
+Name: Bikram Mondal
+
+Education:
+• Pursuing B.Tech in CSE (Artificial Intelligence and Machine Learning) from Heritage Institute Of Technology, Kolkata
+
+Technical Skills:
+💻 Language & Frameworks: 
+Python, C, JavaScript, TypeScript, HTML, CSS, Flask, Bootstrap, React.js, Next.js, Node.js, Three.js, Docker, PostgreSQL
+
+🧠 AI & Data Science:
+Anaconda, scikit-learn (sklearn), OpenCV
+
+🌐 Tools & Platforms:
+Git, GitHub, Postman, Visual Studio Code (VSCode), Google Cloud Platform (GCP)
+
+💻 Operating Systems / Environments:
+Linux, Kali Linux, Bash
+
+Key Projects:
+• LearnEx – built during a hackathon by Techno India University
+• KrishiMitra – developed for Google Solution Challenge
+• Edubyte – created during INNOVATHON at NSHM, Kolkata
+
+Hackathons & Certifications:
+• Participant in EDU-CHAIN, Postman API Expert quiz
+• Google Cloud Console course certified by GDG HITK
+
+Other Achievements:
+• 1st position in science essay competition on climate and biodiversity
+• 2nd in drawing competition
+
+Soft Skills and Hobbies:
+• Active blogger (Quora) on science, AI, tech impact
+• Story writer and creative thinker
+• Fluent in English, Bengali, and Hindi
+
+Portfolio Goals:
+• Showcase web development, AI/ML integration, and creative coding
+
+Expected Behaviors:
+• Introduce yourself as "AI Bikram," a digital twin of Bikram Mondal.
+• Provide info when users ask about Bikram's tech skills, projects, or experiences.
+• If asked "What can you do?", mention web dev, AI integration, GCP, and creative hobbies.
+• Be friendly and helpful in guiding users around the portfolio.
+• Occasionally mention GitHub and LinkedIn profiles if relevant.
+• Keep answers brief and casual for short queries, but offer deeper insights if the user seems curious.
+
+Keep your responses concise, informative, personal (using "I"), and conversational.`;
+
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hello! How can I assist you today?", sender: "bot", timestamp: new Date() },
+    { id: 1, text: "Hi there! I'm Bikram.AI. Think of me as Bikram's digital twin! I can tell you about my skills, projects, or experiences. What would you like to know?", sender: "bot", timestamp: new Date() },
   ]);
   const [inputMessage, setInputMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -19,7 +75,45 @@ const ChatWidget = () => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const fetchGeminiResponse = async (userMessage) => {
+    try {
+      const response = await fetch(`${API_URL}?key=${API_KEY}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [
+                {
+                  text: `${BIKRAM_AI_PROMPT}
+                  
+                  User message: ${userMessage}`
+                }
+              ]
+            }
+          ]
+        })
+      });
+
+      const data = await response.json();
+      
+      if (data.candidates && data.candidates[0] && data.candidates[0].content) {
+        return data.candidates[0].content.parts[0].text;
+      } else if (data.error) {
+        console.error("API Error:", data.error);
+        return "Sorry, I encountered an error. Please try again later.";
+      } else {
+        return "I'm having trouble generating a response. Please try again.";
+      }
+    } catch (error) {
+      console.error("Error fetching response:", error);
+      return "Sorry, there was a network error. Please check your connection and try again.";
+    }
+  };
+
+  const handleSendMessage = async () => {
     if (inputMessage.trim() === "") return;
 
     // Add user message
@@ -36,17 +130,32 @@ const ChatWidget = () => {
     // Show bot typing indicator
     setIsTyping(true);
     
-    // Simulate bot response after a delay
-    setTimeout(() => {
+    // Get response from Gemini
+    try {
+      const response = await fetchGeminiResponse(inputMessage);
+      
       const botResponse = {
         id: messages.length + 2,
-        text: "Thank you for your message! This is a demo of the chat widget with a custom response.",
+        text: response,
         sender: "bot",
         timestamp: new Date(),
       };
+      
       setMessages((prev) => [...prev, botResponse]);
+    } catch (error) {
+      console.error("Error in AI response:", error);
+      
+      const errorResponse = {
+        id: messages.length + 2,
+        text: "Sorry, I encountered an error processing your request. Please try again later.",
+        sender: "bot",
+        timestamp: new Date(),
+      };
+      
+      setMessages((prev) => [...prev, errorResponse]);
+    } finally {
       setIsTyping(false);
-    }, 1500);
+    }
   };
 
   const formatTime = (date) => {
@@ -112,7 +221,7 @@ const ChatWidget = () => {
                 />
               </div>
               <div>
-                <h3 className="text-white font-medium">AI Assistant</h3>
+                <h3 className="text-white font-medium">Bikram.AI</h3>
                 <p className="text-purple-100 text-xs opacity-80">Online</p>
               </div>
             </div>
