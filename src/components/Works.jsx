@@ -25,11 +25,12 @@ const ProjectCard = ({
         transitionSpeed={450}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] flex items-center justify-center overflow-hidden'>
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full rounded-2xl object-cover'
+            style={{ objectPosition: 'center center' }}
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
