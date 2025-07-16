@@ -19,7 +19,7 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
+  KrishiMitra,
   jobit,
   tripguide,
   threejs,
@@ -198,9 +198,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "🌾🚜 KrishiMitra",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "KrishiMitra is an AI-powered agricultural platform that empowers farmers with real-time insights, crop recommendations, weather updates, a direct marketplace, and sustainable farming support.",
     tags: [
       {
         name: "react",
@@ -215,13 +215,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: KrishiMitra,
+    source_code_link: "https://github.com/BikramMondal5/KrishiMitra",
   },
   {
-    name: "Job IT",
+    name: "🤖🪄 Edubyte V1.0",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An AI-powered flask application where user can interact with different generative AI including advanced LLMs GPT-40, DeepSeek, Gemini 2.0 Flash, Mistral AI and many more",
     tags: [
       {
         name: "react",
@@ -299,7 +299,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent, // reusing existing image as placeholder
+    image: KrishiMitra, // reusing existing image as placeholder
     source_code_link: "https://github.com/",
   },
   {
