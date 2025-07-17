@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  Edubyte,
+  Trinoyon,
+  MagicFill,
 } from "../assets";
 
 export const navLinks = [
@@ -198,6 +201,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "🕉️🔱 Project-Trinoyon",
+    description:
+      "A small initiative to make this Durga Puja truly a celebration for all! This project dedicated to bringing smiles to the lives of homeless community during Durga Puja.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Trinoyon,
+    source_code_link: "https://github.com/BikramMondal5/Project-Trinoyon",
+  },
+  {
     name: "🌾🚜 KrishiMitra",
     description:
       "KrishiMitra is an AI-powered agricultural platform that empowers farmers with real-time insights, crop recommendations, weather updates, a direct marketplace, and sustainable farming support.",
@@ -219,7 +243,7 @@ const projects = [
     source_code_link: "https://github.com/BikramMondal5/KrishiMitra",
   },
   {
-    name: "🤖🪄 Edubyte V1.0",
+    name: "🤖🧠 Edubyte V1.0",
     description:
       "An AI-powered flask application where user can interact with different generative AI including advanced LLMs GPT-40, DeepSeek, Gemini 2.0 Flash, Mistral AI and many more",
     tags: [
@@ -236,13 +260,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Edubyte,
+    source_code_link: "https://github.com/BikramMondal5/Edubyte",
   },
   {
-    name: "Trip Guide",
+    name: "🪄📄 MagicFill",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "MagicFill is an AI-powered platform that simplifies form-filling for millions in India, especially in rural and underserved areas. It helps users to automatically filled the application form, ensures inclusive access to critical services by eliminating barriers caused by complex, form-based processes.",
     tags: [
       {
         name: "nextjs",
@@ -257,8 +281,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: MagicFill,
+    source_code_link: "https://github.com/BikramMondal5/MagicFill",
   },
   {
     name: "AI Chat Platform",
@@ -302,27 +326,7 @@ const projects = [
     image: KrishiMitra, // reusing existing image as placeholder
     source_code_link: "https://github.com/",
   },
-  {
-    name: "Health Tracker",
-    description:
-      "A comprehensive health and fitness tracking application that monitors daily activities, nutrition intake, workout routines, and provides personalized recommendations.",
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "graphql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "aws",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide, // reusing existing image as placeholder
-    source_code_link: "https://github.com/",
-  },
+  
   
 ];
 

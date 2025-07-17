@@ -6,6 +6,9 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import Edubyte from "./Edubyte.png";
+import Trinoyon from "./Trinoyon.png";
+import MagicFill from "./MagicFill.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -26,7 +29,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import KrishiMitra from "./KrishiMitra.jpg";
+import KrishiMitra from "./KrishiMitra.png"; // Updated to use the new KrishiMitra.png
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -59,4 +62,7 @@ export {
   KrishiMitra,
   jobit,
   tripguide,
+  Edubyte,
+  Trinoyon,
+  MagicFill,
 };
