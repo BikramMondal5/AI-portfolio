@@ -21,6 +21,11 @@ const Cards = () => {
     }, 2000);
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="c-space mt-34" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-7 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -71,7 +76,7 @@ const Cards = () => {
             <div className="mt-4">
               <p className="grid-headtext">My Location</p>
               <p className="grid-subtext">I&apos;m based in Kolkata, India and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-6" />
+              <Button name="Contact Me" isBeam containerClass="w-full mt-6" onClick={scrollToContact} />
             </div>
           </div>
         </div>

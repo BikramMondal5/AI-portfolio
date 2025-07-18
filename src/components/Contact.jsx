@@ -22,29 +22,34 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+    // Map form field names to state properties
+    const fieldMap = {
+      user_name: 'name',
+      title: 'subject',
+      email: 'email',
+      message: 'message'
+    };
+    
+    const stateKey = fieldMap[name] || name;
+    setForm({ ...form, [stateKey]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
+    // Using formRef instead of creating a separate object
+    // This ensures proper form data submission
     emailjs
-      .send(
+      .sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Bikram",
-          from_email: form.email,
-          to_email: "codesnippets45@gmail.com",
-          subject: form.subject,
-          message: form.message,
-        },
+        formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
-        () => {
+        (result) => {
+          console.log("Email sent successfully:", result.text);
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
@@ -56,9 +61,8 @@ const Contact = () => {
           });
         },
         (error) => {
+          console.error("Failed to send email:", error.text);
           setLoading(false);
-          console.error(error);
-
           alert("Something went wrong. Please try again.");
         }
       );
@@ -88,7 +92,7 @@ const Contact = () => {
               <label className="text-white font-medium">Full Name</label>
               <input
                 type="text"
-                name="name"
+                name="user_name"
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
@@ -114,7 +118,7 @@ const Contact = () => {
               <label className="text-white font-medium">Subject</label>
               <input
                 type="text"
-                name="subject"
+                name="title"
                 value={form.subject}
                 onChange={handleChange}
                 placeholder="What's the subject?"
@@ -135,6 +139,18 @@ const Contact = () => {
                 required
               />
             </div>
+            
+            <input 
+              type="hidden" 
+              name="time" 
+              value={new Date().toLocaleString()} 
+            />
+            
+            <input 
+              type="hidden" 
+              name="to_email" 
+              value="codesnippets45@gmail.com" 
+            />
 
             <button
               type="submit"
