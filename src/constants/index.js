@@ -26,6 +26,8 @@ import {
   Edubyte,
   Trinoyon,
   MagicFill,
+  GithubReadmeGenerator,
+  YouTubeSummarizer,
 } from "../assets";
 
 export const navLinks = [
@@ -224,7 +226,7 @@ const projects = [
   {
     name: "🌾🚜 KrishiMitra",
     description:
-      "KrishiMitra is an AI-powered agricultural platform that empowers farmers with real-time insights, crop recommendations, weather updates, a direct marketplace, and sustainable farming support.",
+      "An AI-powered agricultural platform that empowers farmers with real-time insights, crop recommendations, weather updates and sustainable farming support.",
     tags: [
       {
         name: "react",
@@ -266,7 +268,7 @@ const projects = [
   {
     name: "🪄📄 MagicFill",
     description:
-      "MagicFill is an AI-powered platform that simplifies form-filling for millions in India, especially in rural and underserved areas. It helps users to automatically filled the application form, ensures inclusive access to critical services by eliminating barriers caused by complex, form-based processes.",
+      "MagicFill is an AI-powered platform that auto-fills application forms and helps people especially in rural and underserved communities in India — by removing barriers of complex form-based processes.",
     tags: [
       {
         name: "nextjs",
@@ -285,9 +287,9 @@ const projects = [
     source_code_link: "https://github.com/BikramMondal5/MagicFill",
   },
   {
-    name: "AI Chat Platform",
+    name: "📝✨ Github Readme Generator",
     description:
-      "An intelligent chatbot platform powered by machine learning that provides real-time customer support, multilingual communication, and analytics dashboard for businesses.",
+      "📝✨ A simple, light-weight, client side tool that allows users to generate the professional readme file for Github using Gemini API key",
     tags: [
       {
         name: "react",
@@ -302,13 +304,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit, // reusing existing image as placeholder
-    source_code_link: "https://github.com/",
+    image: GithubReadmeGenerator,
+    source_code_link: "https://github.com/BikramMondal5/Github-readme-generator",
   },
   {
-    name: "E-Learning Platform",
+    name: "🎬📄 YouTube Video Summarizer",
     description:
-      "A feature-rich online learning platform with video courses, interactive quizzes, progress tracking, and certificate generation for completed courses.",
+      "A lightweight web app that uses OpenAI's GPT‑4o to generate concise, well‑structured summaries of YouTube videos from a URL.",
     tags: [
       {
         name: "nextjs",
@@ -323,11 +325,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: KrishiMitra, // reusing existing image as placeholder
-    source_code_link: "https://github.com/",
+    image: YouTubeSummarizer,
+    source_code_link: "https://github.com/BikramMondal5/YouTube-Video-Summarizer",
   },
-  
-  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

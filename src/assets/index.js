@@ -9,6 +9,8 @@ import close from "./close.svg";
 import Edubyte from "./Edubyte.png";
 import Trinoyon from "./Trinoyon.png";
 import MagicFill from "./MagicFill.png";
+import GithubReadmeGenerator from "./Github-readme-generator.png";
+import YouTubeSummarizer from "./YouTube-Video-Summarizer.jpeg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -65,4 +67,6 @@ export {
   Edubyte,
   Trinoyon,
   MagicFill,
+  GithubReadmeGenerator,
+  YouTubeSummarizer,
 };
