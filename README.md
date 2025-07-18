@@ -92,10 +92,6 @@ Feedback and contributions are welcome! If you have ideas for improvement or wou
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
 ## 📬 Contact
 
 Have questions or want to connect? Reach out through the contact form on the portfolio or connect with me directly through my socials.
