@@ -25,24 +25,25 @@ const Cards = () => {
     <section className="c-space mt-34" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src={grid1} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">Hi, I&apos;m Bikram Mondal</p>
+          <div className="grid-container flex flex-col h-full">
+            <div className="flex-grow">
+              <img src={grid1} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            </div>
+            <div className="mt-4">
+              <p className="grid-headtext">Hi, I&apos;m Bikram Mondal 👋</p>
               <p className="grid-subtext">
-                I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+               I love to explore new technologies to refine my skills and contribute to interactive projects and build efficient, scalable, and user-friendly solutions that solve real-world problems.
               </p>
             </div>
           </div>
         </div>
 
         <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src={grid2} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
-
-            <div>
+          <div className="grid-container flex flex-col h-full">
+            <div className="flex-grow">
+              <img src={grid2} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            </div>
+            <div className="mt-4">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
                 I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
@@ -53,8 +54,8 @@ const Cards = () => {
         </div>
 
         <div className="col-span-1 xl:row-span-4">
-          <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+          <div className="grid-container flex flex-col h-full">
+            <div className="flex-grow flex justify-center items-center rounded-3xl">
               <Globe
                 height={326}
                 width={326}
@@ -67,10 +68,10 @@ const Cards = () => {
                 labelsData={[{ lat: 22.5726, lng: 88.3639, text: 'Kolkata, India', color: 'white', size: 15 }]}
               />
             </div>
-            <div>
-              <p className="grid-headtext">I&apos;m very flexible with time zone communications & locations</p>
+            <div className="mt-4">
+              <p className="grid-headtext">My Location</p>
               <p className="grid-subtext">I&apos;m based in Kolkata, India and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <Button name="Contact Me" isBeam containerClass="w-full mt-6" />
             </div>
           </div>
         </div>
