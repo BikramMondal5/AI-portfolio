@@ -57,8 +57,8 @@ const Cards = () => {
           <div className="grid-container flex flex-col h-full">
             <div className="flex-grow flex justify-center items-center rounded-3xl">
               <Globe
-                height={326}
-                width={326}
+                height={400}
+                width={400}
                 backgroundColor="rgba(0, 0, 0, 0)"
                 backgroundImageOpacity={0.5}
                 showAtmosphere
