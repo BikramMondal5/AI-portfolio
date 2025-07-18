@@ -23,8 +23,8 @@ const Cards = () => {
 
   return (
     <section className="c-space mt-34" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-        <div className="col-span-1 xl:row-span-3">
+      <div className="grid xl:grid-cols-3 xl:grid-rows-7 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+        <div className="col-span-1 xl:row-span-2 xl:pb-1">
           <div className="grid-container flex flex-col h-full">
             <div className="flex-grow">
               <img src={grid1} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
@@ -32,13 +32,13 @@ const Cards = () => {
             <div className="mt-4">
               <p className="grid-headtext">Hi, I&apos;m Bikram Mondal 👋</p>
               <p className="grid-subtext">
-               I love to explore new technologies to refine my skills and contribute to interactive projects and build efficient, scalable, and user-friendly solutions that solve real-world problems.
+               I love to explore new technologies to refine my skills and build user-friendly solutions that solve real-world problems.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-3">
+        <div className="col-span-1 xl:row-span-2 xl:pb-1">
           <div className="grid-container flex flex-col h-full">
             <div className="flex-grow">
               <img src={grid2} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
@@ -53,7 +53,7 @@ const Cards = () => {
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-4">
+        <div className="col-span-1 xl:row-span-3 xl:pb-1">
           <div className="grid-container flex flex-col h-full">
             <div className="flex-grow flex justify-center items-center rounded-3xl">
               <Globe
