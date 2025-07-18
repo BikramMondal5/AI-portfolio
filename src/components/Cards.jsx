@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Globe from 'react-globe.gl';
 import Button from './Button.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import the correct grid images from assets
 import grid1 from '../assets/grid1.png';
@@ -12,7 +13,7 @@ const Cards = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' adrian@jsmastery.pro');
+    navigator.clipboard.writeText('codesnippets45@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -105,8 +106,7 @@ const Cards = () => {
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
-                {/* Use text icons since SVG files might be missing */}
-                <span className="text-white">{hasCopied ? '✓' : '📋'}</span>
+                <span className="text-white">{hasCopied ? '✓' : <FontAwesomeIcon icon="copy" />}</span>
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
                   codesnippets45@gmail.com
                 </p>
