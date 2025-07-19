@@ -6,7 +6,7 @@ import Tech from "./Tech";
 import Works from "./Works";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-import Cards from "./cards";
+import Cards from "./Cards";
 import ChatWidget from "./ChatWidget";
 
 
