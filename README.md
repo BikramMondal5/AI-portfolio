@@ -5,14 +5,9 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Latest-38bdf8?logo=tailwind-css)
 
 ![Portfolio Screenshot](src/assets/screenshot.png)
-
-## 📋 Overview
-
-This AI-powered portfolio is a cutting-edge web application that showcases my projects, skills, and experience in an interactive and engaging way. Leveraging the power of 3D visualization and artificial intelligence, this portfolio creates a memorable experience for visitors while effectively communicating my professional capabilities and creative vision.
-
-## 👋 Introduction
-
-Welcome to my AI-powered Portfolio! This project combines modern web development techniques with stunning 3D visualization to create an engaging, interactive showcase of my work. Whether you're a potential employer, collaborator, or fellow developer, I hope you enjoy exploring this digital representation of my skills and projects.
+Welcome to my AI-powered Portfolio! This AI-powered portfolio is a cutting-edge web application that showcases my projects, skills, and experience in an interactive and engaging way.
+ Leveraging the power of 3D visualization and artificial intelligence, this portfolio creates a memorable experience for visitors while effectively communicating my professional capabilities and creative vision.
+Whether you're a potential employer, collaborator, or fellow developer, I hope you enjoy exploring this digital representation of my skills and projects.
 
 ## 🌟 Key Features
 
