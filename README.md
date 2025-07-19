@@ -14,6 +14,12 @@ This AI-powered portfolio is a cutting-edge web application that showcases my pr
 
 Welcome to my AI-powered Portfolio! This project combines modern web development techniques with stunning 3D visualization to create an engaging, interactive showcase of my work. Whether you're a potential employer, collaborator, or fellow developer, I hope you enjoy exploring this digital representation of my skills and projects.
 
+## 🤖🧠 Introducing Bikram.AI
+
+The digital twin of myself. Bikram.AI is my personalized AI assistant integrated directly into this portfolio. It's designed to enhance your browsing experience by providing instant information about my projects, skills, and professional background. 
+
+Using advanced natural language processing, Bikram.AI can answer questions, highlight relevant work experiences, and even explain the technical aspects of my projects. Feel free to interact with the chat widget to experience the power of AI-assisted portfolio navigation!
+
 ## ✨ Key Features
 
 - **🔮 Interactive 3D Models**: Immerse yourself in a world of realistic 3D models, including drones and laptops with detailed textures and fluid animations.

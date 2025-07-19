@@ -208,17 +208,9 @@ const projects = [
       "A small initiative to make this Durga Puja truly a celebration for all! This project dedicated to bringing smiles to the lives of homeless community during Durga Puja.",
     tags: [
       {
-        name: "react",
+        name: "Team Work",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      }
     ],
     image: Trinoyon,
     source_code_link: "https://github.com/BikramMondal5/Project-Trinoyon",
@@ -229,17 +221,9 @@ const projects = [
       "An AI-powered agricultural platform that empowers farmers with real-time insights, crop recommendations, weather updates and sustainable farming support.",
     tags: [
       {
-        name: "react",
+        name: "Team Work",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      }
     ],
     image: KrishiMitra,
     source_code_link: "https://github.com/BikramMondal5/KrishiMitra",
@@ -250,17 +234,9 @@ const projects = [
       "An AI-powered flask application where user can interact with different generative AI including advanced LLMs GPT-40, DeepSeek, Gemini 2.0 Flash, Mistral AI and many more",
     tags: [
       {
-        name: "react",
+        name: "Team Work",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      }
     ],
     image: Edubyte,
     source_code_link: "https://github.com/BikramMondal5/Edubyte",
@@ -271,17 +247,9 @@ const projects = [
       "MagicFill is an AI-powered platform that auto-fills application forms and helps people especially in rural and underserved communities in India — by removing barriers of complex form-based processes.",
     tags: [
       {
-        name: "nextjs",
+        name: "Team Work",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      }
     ],
     image: MagicFill,
     source_code_link: "https://github.com/BikramMondal5/MagicFill",
@@ -292,17 +260,9 @@ const projects = [
       "📝✨ A simple, light-weight, client side tool that allows users to generate the professional readme file for Github using Gemini API key",
     tags: [
       {
-        name: "react",
+        name: "Solo Project",
         color: "blue-text-gradient",
-      },
-      {
-        name: "tensorflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "pink-text-gradient",
-      },
+      }
     ],
     image: GithubReadmeGenerator,
     source_code_link: "https://github.com/BikramMondal5/Github-readme-generator",
@@ -313,17 +273,9 @@ const projects = [
       "A lightweight web app that uses OpenAI's GPT‑4o to generate concise, well‑structured summaries of YouTube videos from a URL.",
     tags: [
       {
-        name: "nextjs",
+        name: "Solo Project",
         color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "stripe",
-        color: "pink-text-gradient",
-      },
+      }
     ],
     image: YouTubeSummarizer,
     source_code_link: "https://github.com/BikramMondal5/YouTube-Video-Summarizer",
