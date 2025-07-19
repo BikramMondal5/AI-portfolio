@@ -6,6 +6,10 @@
 
 ![Portfolio Screenshot](src/assets/screenshot.png)
 
+## 📋 Overview
+
+This AI-powered portfolio is a cutting-edge web application that showcases my projects, skills, and experience in an interactive and engaging way. Leveraging the power of 3D visualization and artificial intelligence, this portfolio creates a memorable experience for visitors while effectively communicating my professional capabilities and creative vision.
+
 ## 👋 Introduction
 
 Welcome to my AI-powered Portfolio! This project combines modern web development techniques with stunning 3D visualization to create an engaging, interactive showcase of my work. Whether you're a potential employer, collaborator, or fellow developer, I hope you enjoy exploring this digital representation of my skills and projects.
@@ -17,6 +21,9 @@ Welcome to my AI-powered Portfolio! This project combines modern web development
 - **AI-Powered Chat Widget**: Get immediate responses to your questions through an intelligent chat assistant powered by Google's Gemini API.
 - **Dynamic Content**: Experience smooth transitions and captivating visual effects throughout the portfolio.
 - **Performance Optimized**: Fast loading times and efficient rendering even with complex 3D elements.
+- **Dark Mode**: Eye-friendly interface with automatic theme detection.
+- **Project Showcase**: Detailed display of projects with links, descriptions, and technologies used.
+- **Skill Visualization**: Interactive representation of technical skills with visually appealing elements.
 
 ## 🛠️ Technologies Used
 
@@ -26,47 +33,10 @@ Welcome to my AI-powered Portfolio! This project combines modern web development
 - **Motion Graphics**: Framer Motion for smooth animations
 - **AI Integration**: Google Gemini API for intelligent interactions
 - **Contact System**: EmailJS for hassle-free communication
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v16.0 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/AI-portfolio.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd AI-portfolio
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   # or if you prefer yarn
-   yarn
-   ```
-
-4. Set up environment variables:
-   ```bash
-   cp .env.example .env
-   ```
-   Then edit the `.env` file with your API keys and configuration.
-
-5. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-6. Open your browser and visit `http://localhost:5173` to view the portfolio.
+- **State Management**: React Context API for efficient state handling
+- **Version Control**: Git for code versioning
+- **Deployment**: Hosted on Vercel/Netlify for optimal performance
+- **Optimization**: Lazy loading and code splitting for improved performance
 
 ## 🎯 Project Structure
 
@@ -75,27 +45,16 @@ Welcome to my AI-powered Portfolio! This project combines modern web development
 - `src/constants` - Application constants and configuration
 - `src/utils` - Utility functions and helpers
 
-## 💡 Why This Portfolio Stands Out
-
-- **Blend of Art and Technology**: Demonstrates the beautiful intersection of creative design and technical implementation.
-- **Performance-Focused**: Optimized for speed and efficiency, even with complex 3D rendering.
-- **Interactive Experience**: Goes beyond static content to create memorable user interactions.
-- **Professional Presentation**: Showcases work in a polished, industry-standard format.
-
-## 🤝 Contributing
-
-Feedback and contributions are welcome! If you have ideas for improvement or would like to collaborate, please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📬 Contact
 
-Have questions or want to connect? Reach out through the contact form on the portfolio or connect with me directly through my socials.
+Feel free to reach out to me through any of the following channels:
 
----
+- **Email**: [codesnippets45@gmail.com](mailto:codesnippets45@gmail.com)
+- **LinkedIn**: [Bikram Mondal](https://www.linkedin.com/in/bikram-mondal-a2bb18343)
+- **GitHub**: [BikramMondal5](https://github.com/BikramMondal5)
+- **Twitter**: [@CSnippets62428](https://x.com/CSnippets62428)
 
-*Built with ❤️ and a passion for creating exceptional web experiences.*
+Or simply use the contact form on my portfolio website to send me a message directly. I'm always open to discussing new projects, opportunities, or just connecting with fellow developers!
+
+## 📜 License
+This project is licensed under the `MIT License`.
