@@ -6,10 +6,13 @@
 
 ![Portfolio Screenshot](src/assets/screenshot.png)
 Welcome to my AI-powered Portfolio! This AI-powered portfolio is a cutting-edge web application that showcases my projects, skills, and experience in an interactive and engaging way.
- Leveraging the power of 3D visualization and artificial intelligence, this portfolio creates a memorable experience for visitors while effectively communicating my professional capabilities and creative vision.
+
+## 🌟 Overview 
+Leveraging the power of 3D visualization and artificial intelligence, this portfolio creates a memorable experience for visitors while effectively communicating my professional capabilities and creative vision. 
+
 Whether you're a potential employer, collaborator, or fellow developer, I hope you enjoy exploring this digital representation of my skills and projects.
 
-## 🌟 Key Features
+## 🚀 Key Features
 
 - **Interactive 3D Models**: Immerse yourself in a world of realistic 3D models, including drones and laptops with detailed textures and fluid animations.
 - **Responsive Design**: Enjoy a seamless experience across all devices - from smartphones to ultrawide monitors.
