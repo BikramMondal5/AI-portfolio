@@ -74,7 +74,7 @@ const Cards = () => {
               />
             </div>
             <div className="mt-4">
-              <p className="grid-headtext">My Location</p>
+              <p className="grid-headtext">Love to connecting with fellow developers!</p>
               <p className="grid-subtext">I&apos;m based in Kolkata, India and open to remote work worldwide.</p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-6" onClick={scrollToContact} />
             </div>

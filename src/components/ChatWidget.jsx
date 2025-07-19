@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiSend, FiPaperclip, FiMic, FiMinimize2, FiMaximize2 } from "react-icons/fi";
+import { FiSend, FiMic, FiMinimize2, FiMaximize2 } from "react-icons/fi";
+import { FaAt } from "react-icons/fa"; // Add @ icon
 import { BsThreeDots } from "react-icons/bs";
 import { styles } from "../styles";
 
@@ -93,11 +94,26 @@ const ChatWidget = () => {
   const [retryCount, setRetryCount] = useState(0);
   const maxRetries = 2; // Maximum number of retry attempts
   const [isListening, setIsListening] = useState(false);
+  const dropdownRef = useRef(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [activeMode, setActiveMode] = useState("AI Mode"); // Default to AI Mode
 
   // Auto scroll to bottom of chat
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
+  
+  // Click outside listener to close dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // Initialize speech recognition
   useEffect(() => {
@@ -428,15 +444,45 @@ const ChatWidget = () => {
           {/* Input area */}
           {!minimized && (
             <div className="bg-[#1a1a1a] p-3 border-t border-[#333] flex items-center gap-2">
-              <button className="text-purple-400 hover:text-purple-300 p-2 rounded-full hover:bg-white/5 transition-colors">
-                <FiPaperclip className="w-5 h-5" />
+              <button 
+                className="text-purple-400 hover:text-purple-300 p-2 rounded-full hover:bg-white/5 transition-colors"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                ref={dropdownRef}
+              >
+                <FaAt className="w-5 h-5" />
               </button>
+              
+              {dropdownOpen && (
+                <div className="absolute bottom-16 left-5 bg-[#262626] rounded-lg shadow-lg border border-[#333] w-36 overflow-hidden z-10">
+                  <div className="py-1">
+                    <button 
+                      className="w-full text-left px-4 py-2 text-sm text-gray-300 hover:bg-[#333]"
+                      onClick={() => {
+                        setActiveMode("AI Mode");
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      AI Mode
+                    </button>
+                    <button 
+                      className="w-full text-left px-4 py-2 text-sm text-gray-300 hover:bg-[#333]"
+                      onClick={() => {
+                        setActiveMode("Agent Mode");
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      Agent Mode
+                    </button>
+                  </div>
+                </div>
+              )}
+              
               <input
                 type="text"
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
-                placeholder="Type a message..."
+                placeholder="Ask me anything..."
                 className="flex-1 bg-[#262626] text-gray-200 rounded-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-purple-500 text-sm placeholder:text-gray-500"
               />
               <button className="text-purple-400 hover:text-purple-300 p-2 rounded-full hover:bg-white/5 transition-colors" onClick={handleMicClick}>
