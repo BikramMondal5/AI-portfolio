@@ -32,7 +32,7 @@ const Hero = () => {
             className="mt-8 flex gap-4"
           >
             <a
-              href="https://www.linkedin.com/in/bikrammondal5"
+              href="https://www.linkedin.com/in/bikram-mondal-a2bb18343/"
               target="_blank"
               rel="noopener noreferrer"
               className="py-3 px-8 rounded-[30px] outline-none w-fit text-white shadow-md shadow-primary 
